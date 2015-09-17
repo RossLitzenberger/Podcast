@@ -1,0 +1,70 @@
+<div id="podcast_show">
+  <div id="show_banner">
+    <div class="wrapper_skinny">
+      <h1><%= @podcast.title %></h1>
+      <p class="description"><%= @podcast.description %></p>
+      <% unless @podcast.itunes.blank? %>
+        <a href="<%= @podcast.itunes %>" class="subscribe_link">iTunes</a>
+      <% end %>
+      <% unless @podcast.stitcher.blank? %>
+        <a href="<%= @podcast.stitcher %>" class="subscribe_link">Stitcher</a>
+      <% end %>
+      <% unless @podcast.podbay.blank? %>
+        <a href="<%= @podcast.podbay %>" class="subscribe_link">PodBay</a>
+      <% end %>
+    </div>
+  </div>
+  <div id="breadcrumb">
+    <%= link_to podcasts_path do%>
+      <a href="#">All Podcasts<span>/</span>The Rocketship Podcast</a>
+    <% end %>
+  </div>
+  <div id="episodes">
+    <div class="wrapper_skinny">
+      <ul class="cf">
+        <li class="cf">
+          <div class="episode_thumbnail">
+            <a href="episode.html"><img src="http://placehold.it/150x150" alt=""></a>
+          </div>
+          <div class="episode_overview">
+            <h2><a href="episode.html">How to pull off 12 well startup in 12 week</a></h2>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </li>
+        <li class="cf">
+          <div class="episode_thumbnail">
+            <a href="episode.html"><img src="http://placehold.it/150x150" alt=""></a>
+          </div>
+          <div class="episode_overview">
+            <h2><a href="episode.html">How to pull off 12 well startup in 12 week</a></h2>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </li>
+        <li class="cf">
+          <div class="episode_thumbnail">
+            <a href="episode.html"><img src="http://placehold.it/150x150" alt=""></a>
+          </div>
+          <div class="episode_overview">
+            <h2><a href="episode.html">How to pull off 12 well startup in 12 week</a></h2>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </li>
+        <li class="cf">
+          <div class="episode_thumbnail">
+            <a href="episode.html"><img src="http://placehold.it/150x150" alt=""></a>
+          </div>
+          <div class="episode_overview">
+            <h2><a href="episode.html">How to pull off 12 well startup in 12 week</a></h2>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="pagination">
+  <span class="previous_page disabled">Previous</span>
+  <em class="current">1</em>
+  <a href="#">2</a>
+  <a class="next_page" href="#">Next</a>
+</div>

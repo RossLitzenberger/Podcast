@@ -26,8 +26,8 @@
           <li><%= link_to "Sign in", new_podcast_session_path%></li>
           <li><%= link_to "Create a Podcast", new_podcast_registration_path%></li>
         <% else %>
-          <li><a href="#">Explore</a></li>
           <li><a href="#">Dashboard</a></li>
+          <li><%= link_to "Explore", podcasts_path %></li>
           <li><%= link_to "Sign Out", destroy_podcast_session_path, method: :delete %></li>
         <% end %>
       </ul>
