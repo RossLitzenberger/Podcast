@@ -17,7 +17,7 @@ class EpisodesController < ApplicationController
   end
 
   def show
-    @episodes = Episode.where(podcast_id: @podcast).order(created_at: :desc).reject {|e| e.id == @episode.id}
+    @episodes = Episode.where(podcast_id: @podcast).order(created_at: :desc).limit(6).reject {|e| e.id == @episode.id}
   end
 
   def edit
